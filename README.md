@@ -18,7 +18,7 @@ yarn add catch-await --save
 ## Usage
 
 ```js
-import to from 'catch-await';
+import { to } from 'catch-await';
 
 async function asyncFunction(callback) {
   const { error: userError, data: user } = await to(UserModel.findById(1));
