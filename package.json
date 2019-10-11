@@ -1,24 +1,26 @@
 {
-  "name": "",
-  "version": "2.1.1",
+  "name": "catch-await",
+  "version": "1.0.0",
   "description": "Async/await wrapper for easy error handling in js",
   "keywords": [
     "node",
     "async",
     "await",
-    "async await"
+    "async await",
+    "catch",
+    "await catch"
   ],
   "main": "dist/await-to-js.umd.js",
   "module": "dist/await-to-js.es5.js",
   "typings": "dist/types/await-to-js.d.ts",
-  "homepage": "https://github.com/scopsy/await-to-js#readme",
+  "homepage": "https://github.com/RomanChasovitin/catch-await",
   "files": [
     "dist"
   ],
-  "author": "Dima Grossman <dima@grossman.io>, Tomer Barnea <tomer@barnea.io>",
+  "author": "Roman Chasovitin",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scopsy/await-to-js.git"
+    "url": "git+https://github.com/RomanChasovitin/catch-await.git"
   },
   "license": "MIT",
   "engines": {
@@ -34,24 +36,6 @@
     "test:prod": "npm run lint && npm run test -- --coverage --no-cache",
     "deploy-docs": "ts-node tools/gh-pages-publish",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "commit": "git-cz",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "{src,test}/**/*.ts": [
-      "git add"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    },
-    "validate-commit-msg": {
-      "types": "conventional-commit-types",
-      "helpMessage": "Use \"npm run commit\" instead, we use conventional-changelog format :) (https://github.com/commitizen/cz-cli)"
-    }
   },
   "jest": {
     "transform": {
