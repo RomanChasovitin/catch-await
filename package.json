@@ -10,7 +10,7 @@
     "catch",
     "await catch"
   ],
-  "main": "dist/await-to-js.umd.js",
+  "main": "index.js",
   "module": "dist/await-to-js.es5.js",
   "typings": "dist/types/await-to-js.d.ts",
   "homepage": "https://github.com/RomanChasovitin/catch-await",
@@ -35,7 +35,7 @@
     "test:watch": "jest --watch",
     "test:prod": "npm run lint && npm run test -- --coverage --no-cache",
     "deploy-docs": "ts-node tools/gh-pages-publish",
-    "report-coverage": "cat ./coverage/lcov.info | coveralls",
+    "report-coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "jest": {
     "transform": {
